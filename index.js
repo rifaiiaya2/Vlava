@@ -7,7 +7,7 @@ var Original_content = `
 <p class="description">DESCRIPTION</p>
 </div>`
 
-fetch('http://localhost:2000/services')
+fetch('https://vlava-api.herokuapp.com/services')
   .then(response => response.json())
   .then(json => {
     json.Services.forEach(element => {
